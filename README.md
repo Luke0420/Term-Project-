@@ -43,7 +43,7 @@ This project aims to develop an interactive 1A2B game using a Raspberry Pi Zero 
 - CSS
 
 ## 1A2B Game Rules
-Each player thinks of a secret number with no repeated digits. The opponent attempts to guess the number. For each guess, the player is told the number of digits that are correct and in the correct place (bulls) and the number of digits that are correct but in the wrong place (cows). For example, if the secret number is 2170 and the guess is 0123, the response would be "1 bull and 2 cows".
+Each player thinks of a secret number with no repeated digits. The opponent attempts to guess the number. For each guess, the player is told the number of digits that are correct and in the correct place (bulls) and the number of digits that are correct but in the wrong place (cows). For example, if the secret number is 2170 and the guess is 0123, the response would be "1 A and 2 B".
 
 ## Application Goal
 The goal of this project is to create a fully functional 1A2B game that utilizes the Raspberry Pi Zero 2 W and various peripherals and to provide a web interface for tracking game progress and player statistics. The project will demonstrate knowledge in web server setup, PHP scripting, and relational databases along with hardware-software integration.
