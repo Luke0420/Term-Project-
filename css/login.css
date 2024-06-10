@@ -1,0 +1,29 @@
+body{
+    background: url('../images/login.jpeg');
+    background-size: cover;
+}
+
+.Whole{
+
+    text-align: center;
+}
+
+.loginHeader{
+
+    font-size: 45px;
+}
+
+.loginBody{
+
+    font-size: 25px;
+}
+
+.form{
+    background: rgb(130, 240, 90);
+    padding: 50px;
+    border: 2px;
+    margin: 0 auto;
+    width: 500px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+}

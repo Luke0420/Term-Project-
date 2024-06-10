@@ -4,10 +4,10 @@
         <title>The Guessing Game</title>
         
         <link rel = "sylesheet" type = "text/css" href="css/afterSignIn.css">
-        <script src = "afterSignIn.js"> </script>
-
+        <script src = "js/afterSignIn.js"> </script>
+        <a href = "/database/logout.php" ></a>
     </head>
-    
+
     <body>
         ** time, Logout and Username display at top right corner 
 

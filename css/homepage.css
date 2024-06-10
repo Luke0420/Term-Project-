@@ -1,0 +1,14 @@
+
+.Whole{
+    text-align: center;
+}
+
+.button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 30px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 100px;
+  }
