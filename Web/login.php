@@ -12,7 +12,7 @@
 
         include('database/connection.php');
         
-        $query = 'SELECT * FROM Users WHERE Users.Account="'. $username .'" AND Users.password="'. $password .'"';
+        $query = 'SELECT * FROM Users WHERE Users.Account="'. $username .'" AND Users.password="'. $password .'"';  //Unable to select corresponding
         $stmt = $conn->prepare($query);
         $stmt ->execute();
 
@@ -33,7 +33,7 @@
             The Guessing Game
         </title>
 
-        <link rel="stylesheet" type = "text/css" href = "css/signin.css"> 
+        <link rel="stylesheet" type = "text/css" href = "css/signin.css">    
 
     </head>
 
