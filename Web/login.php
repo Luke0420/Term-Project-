@@ -41,7 +41,8 @@
             The Guessing Game
         </title>
 
-        <link rel="stylesheet" type="text/css" href="css/login.css">
+        <link rel="stylesheet" type = "text/css" href = "css/login.css"> 
+        
     </head>
 
     <body>
@@ -63,13 +64,13 @@
 
                 <form action = "login.php" method = "POST" class = "form">
                 <div>
-                    <label for ="" > Username</label>
-                    <input name = "username" type = "text">
+                    <label for ="username" > Username</label>
+                    <input name = "username" type = "text" id = "username" >
                 </div>
 
                 <div>
-                    <label for="">Password</label>
-                    <input name = "password" type="password">
+                    <label for="password">Password</label>
+                    <input name = "password" type="password" id = "password">
                 </div>
 
                 <div>

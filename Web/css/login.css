@@ -3,14 +3,11 @@ body{
     background-size: cover;
 }
 
-.Whole{
 
-    text-align: center;
-}
 
 .loginHeader{
 
-    font-size: 45px;
+    font-size: 35px;
 }
 
 .loginBody{
@@ -19,7 +16,7 @@ body{
 }
 
 .form{
-    background: rgb(130, 240, 90);
+    background: rgb(255, 255, 255);
     padding: 50px;
     border: 2px;
     margin: 0 auto;

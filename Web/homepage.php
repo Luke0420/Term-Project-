@@ -3,7 +3,7 @@
     
     <head>  
         <title>The Guessing Game</title>
-        <link rel = "stylesheet" type="text/css" href="css/homepage.css"
+        <link rel = "stylesheet" type="text/css" href="css/homepage.css">
 
         <script src = "js/homepage.js"></script>
     </head>
