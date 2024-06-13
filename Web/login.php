@@ -5,31 +5,23 @@
     session_start();
     if($_POST)
     {
-        // var_dump($_POST);
+        var_dump($_POST); // Get things user submit 
 
         $username = $_POST['username'];
         $password = $_POST['password'];
 
         include('database/connection.php');
-
-        $query = 'SELECT * FROM Users WHERE Users.Account ="' . $username . ' " AND Users.Password="'. $password .'" LIMIT 1';  //Search in database
-        $stmt = $conn->prepare($query);
-        $result = $stmt->execute();
-
         
+        $query = 'SELECT * FROM Users WHERE Users.Account="'. $username .'" AND Users.password="'. $password .'"';
+        $stmt = $conn->prepare($query);
+        $stmt ->execute();
 
-        if($stmt->rowCount() > 0)  // check if the data exist    // BUG 
-        {
-            $stmt->setFetchMode(PDO::FETCH_ASSOC);      
-            $Users = $stmt->fetchAll()[0];
-            $_SESSION['Users'] = $Users;
+ 
+        var_dump($stmt->rowCount());
+        die;
 
-            header('Location: afterSignIn.php');   // Redirect 
-
-        }
-        else 
-             $error_message = "Please make sure user name and password are correct";
-       
+    
+        
     }
 
 ?>
@@ -41,18 +33,19 @@
             The Guessing Game
         </title>
 
-        <link rel="stylesheet" type = "text/css" href = "css/login.css"> 
-        
+        <link rel="stylesheet" type = "text/css" href = "css/signin.css"> 
+
     </head>
 
     <body>
 
-        <div> <?php
+        <div class = "error"> <?php
 
         if(!empty($error_message))     //display error message if it's not empty 
             echo "Error: $error_message";
         
-        ?></div>
+        ?>
+        </div>
         <div class = "Whole">
 
             <div class = "loginHeader">
@@ -74,7 +67,12 @@
                 </div>
 
                 <div>
-                    <button>Login</button>
+                    <button id = "loginButton">Login</button>
+                </div>
+
+                <div>
+                    <button id = "registerButton">Register</button>
+                    <button id = "returnHome"> Home Page</button>
                 </div>
 
             </form>

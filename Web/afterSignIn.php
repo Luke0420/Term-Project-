@@ -20,5 +20,9 @@
                 History Review
             </button>
         </div>
+
+        <div>
+            <button id = "logOut" > Log Out </button>
+        </div>
     </body>
 </html>
